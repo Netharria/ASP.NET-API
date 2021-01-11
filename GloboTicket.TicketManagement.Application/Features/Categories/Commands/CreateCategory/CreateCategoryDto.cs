@@ -4,7 +4,9 @@ using System.Text;
 
 namespace GloboTicket.TicketManagement.Application.Features.Categories.Commands.CreateCategory
 {
-    class CreateCategoryDto
+    public class CreateCategoryDto
     {
+        public Guid CategoryId { get; set; }
+        public string Name { get; set; }
     }
 }
