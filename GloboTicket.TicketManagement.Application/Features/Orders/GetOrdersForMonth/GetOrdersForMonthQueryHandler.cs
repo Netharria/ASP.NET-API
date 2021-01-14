@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GloboTicket.TicketManagement.Application.Features.Orders.GetOrdersForMonth
 {
-    class GetOrdersForMonthQueryHandler : IRequestHandler<GetOrdersForMonthQuery, PagedOrdersForMonthVm>
+    public class GetOrdersForMonthQueryHandler : IRequestHandler<GetOrdersForMonthQuery, PagedOrdersForMonthVm>
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IMapper _mapper;
